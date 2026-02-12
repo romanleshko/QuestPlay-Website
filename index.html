@@ -5,10 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="favicon.png" sizes="128x128">
-  <title>QuestPlay | RPG Maker Player for iOS</title>
+  <title>QuestPlay | RPG Maker MV & MZ Player for iOS, iPhone and iPad</title>
+  <meta name="description" content="QuestPlay is an offline RPG Maker MV and MZ player for iPhone and iPad. Play your local RPG Maker games on iOS with a focused, smooth experience.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://questplay.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="QuestPlay">
+  <meta property="og:title" content="QuestPlay | RPG Maker MV & MZ Player for iOS, iPhone and iPad">
+  <meta property="og:description" content="Offline RPG Maker MV and MZ player for iPhone and iPad.">
+  <meta property="og:url" content="https://questplay.app/">
+  <meta property="og:image" content="https://questplay.app/QuestPlay.png">
+  <meta property="og:image:alt" content="QuestPlay app icon">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="QuestPlay | RPG Maker MV & MZ Player for iOS, iPhone and iPad">
+  <meta name="twitter:description" content="Offline RPG Maker MV and MZ player for iPhone and iPad.">
+  <meta name="twitter:image" content="https://questplay.app/QuestPlay.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "QuestPlay",
+          "url": "https://questplay.app/",
+          "logo": "https://questplay.app/QuestPlay.png",
+          "email": "support@questplay.app"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "QuestPlay",
+          "applicationCategory": "GameApplication",
+          "operatingSystem": "iOS, iPadOS",
+          "url": "https://questplay.app/",
+          "downloadUrl": "https://apps.apple.com/us/app/questplay/id6755599957?itscg=30200&itsct=apps_box_link&mttnsubad=6755599957",
+          "description": "QuestPlay is an offline RPG Maker MV and MZ player for iPhone and iPad.",
+          "image": "https://questplay.app/QuestPlay.png",
+          "publisher": {
+            "@type": "Person",
+            "name": "Roman Leshko"
+          }
+        }
+      ]
+    }
+  </script>
   <style>
     :root {
       --bg: #f8f9ff;
@@ -174,6 +219,43 @@
       box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
     }
 
+    .features {
+      padding: 0 0 2.4rem;
+      animation: lift-in 760ms ease-out 180ms both;
+    }
+
+    .features-card {
+      background: rgba(255, 255, 255, 0.76);
+      border-radius: 22px;
+      padding: clamp(1rem, 2.2vw, 1.45rem);
+      box-shadow: 0 10px 24px rgba(96, 64, 160, 0.08);
+    }
+
+    .features-intro {
+      margin: 0.55rem 0 0;
+      color: var(--muted);
+      max-width: 70ch;
+      font-size: 0.96rem;
+    }
+
+    .features-list {
+      list-style: none;
+      margin: 1rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.7rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .features-list li {
+      background: rgba(255, 255, 255, 0.88);
+      border-radius: 14px;
+      padding: 0.72rem 0.78rem;
+      color: #464a68;
+      font-size: 0.9rem;
+      box-shadow: 0 6px 14px rgba(96, 64, 160, 0.07);
+    }
+
     .privacy {
       padding: 0 0 3.2rem;
     }
@@ -288,6 +370,10 @@
       .policy-grid {
         grid-template-columns: 1fr;
       }
+
+      .features-list {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 560px) {
@@ -323,7 +409,7 @@
 
 <body>
   <header class="shell topbar">
-    <a href="#" class="brand">
+    <a href="/" class="brand">
       QuestPlay
     </a>
     <a href="#privacy" class="nav-link">Privacy</a>
@@ -349,6 +435,18 @@
       <aside class="hero-visual" aria-label="QuestPlay logo">
         <img src="QuestPlay.png" alt="QuestPlay app icon" class="app-logo">
       </aside>
+    </section>
+
+    <section class="features" aria-label="QuestPlay features">
+      <article class="features-card">
+        <h2>Built for RPG Maker on iPhone and iPad</h2>
+        <p class="features-intro">QuestPlay focuses on smooth game playback for RPG Maker MV and MZ projects, including offline play and a local game library workflow.</p>
+        <ul class="features-list">
+          <li>Play RPG Maker MV and MZ projects on iPhone and iPad.</li>
+          <li>Use offline play for local game sessions anywhere.</li>
+          <li>Keep a focused library experience designed for iOS.</li>
+        </ul>
+      </article>
     </section>
 
     <section class="privacy" id="privacy">
