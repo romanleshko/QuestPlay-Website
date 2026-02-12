@@ -219,43 +219,6 @@
       box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
     }
 
-    .features {
-      padding: 0 0 2.4rem;
-      animation: lift-in 760ms ease-out 180ms both;
-    }
-
-    .features-card {
-      background: rgba(255, 255, 255, 0.76);
-      border-radius: 22px;
-      padding: clamp(1rem, 2.2vw, 1.45rem);
-      box-shadow: 0 10px 24px rgba(96, 64, 160, 0.08);
-    }
-
-    .features-intro {
-      margin: 0.55rem 0 0;
-      color: var(--muted);
-      max-width: 70ch;
-      font-size: 0.96rem;
-    }
-
-    .features-list {
-      list-style: none;
-      margin: 1rem 0 0;
-      padding: 0;
-      display: grid;
-      gap: 0.7rem;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .features-list li {
-      background: rgba(255, 255, 255, 0.88);
-      border-radius: 14px;
-      padding: 0.72rem 0.78rem;
-      color: #464a68;
-      font-size: 0.9rem;
-      box-shadow: 0 6px 14px rgba(96, 64, 160, 0.07);
-    }
-
     .privacy {
       padding: 0 0 3.2rem;
     }
@@ -371,9 +334,6 @@
         grid-template-columns: 1fr;
       }
 
-      .features-list {
-        grid-template-columns: 1fr;
-      }
     }
 
     @media (max-width: 560px) {
@@ -409,9 +369,9 @@
 
 <body>
   <header class="shell topbar">
-    <a href="/" class="brand">
+    <span class="brand" aria-label="QuestPlay">
       QuestPlay
-    </a>
+    </span>
     <a href="#privacy" class="nav-link">Privacy</a>
   </header>
 
@@ -435,18 +395,6 @@
       <aside class="hero-visual" aria-label="QuestPlay logo">
         <img src="QuestPlay.png" alt="QuestPlay app icon" class="app-logo">
       </aside>
-    </section>
-
-    <section class="features" aria-label="QuestPlay features">
-      <article class="features-card">
-        <h2>Built for RPG Maker on iPhone and iPad</h2>
-        <p class="features-intro">QuestPlay focuses on smooth game playback for RPG Maker MV and MZ projects, including offline play and a local game library workflow.</p>
-        <ul class="features-list">
-          <li>Play RPG Maker MV and MZ projects on iPhone and iPad.</li>
-          <li>Use offline play for local game sessions anywhere.</li>
-          <li>Keep a focused library experience designed for iOS.</li>
-        </ul>
-      </article>
     </section>
 
     <section class="privacy" id="privacy">
